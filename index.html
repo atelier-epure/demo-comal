@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comal — Taqueria mexicaine à Flagey, Ixelles (Bruxelles)</title>
+  <meta name="description" content="Comal — taqueria mexicaine à Flagey, Ixelles. Tortillas de masa fraîche, tacos al pastor, mezcal. Réservation en ligne, ouvert du mardi au dimanche.">
+  <meta name="theme-color" content="#0f0f0f">
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="fr" href="https://comal.be/">
+  <link rel="alternate" hreflang="en" href="https://comal.be/en.html">
+  <link rel="alternate" hreflang="nl" href="https://comal.be/nl.html">
+  <link rel="alternate" hreflang="x-default" href="https://comal.be/">
+  <link rel="canonical" href="https://comal.be/">
+
+  <!-- OpenGraph -->
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="Comal — Le Mexique de rue, à Flagey">
+  <meta property="og:description" content="Taqueria mexicaine à Flagey, Ixelles. Tortillas de masa fraîche, tacos al pastor, mezcal.">
+  <meta property="og:image" content="https://comal.be/assets/photos/hero.jpg">
+  <meta property="og:url" content="https://comal.be/">
+  <meta property="og:locale" content="fr_BE">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS (CDN versionné figé) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+  <link rel="stylesheet" href="styles.css?v=3">
+
+  <!-- Schema.org Restaurant -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Comal",
+    "image": "https://comal.be/assets/photos/hero.jpg",
+    "url": "https://comal.be/",
+    "telephone": "+32 2 644 18 90",
+    "email": "hola@comal.be",
+    "priceRange": "€€",
+    "servesCuisine": ["Mexican", "Street food", "Taqueria"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rue Lesbroussart 88",
+      "postalCode": "1050",
+      "addressLocality": "Ixelles",
+      "addressRegion": "Bruxelles",
+      "addressCountry": "BE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 50.8276, "longitude": 4.3724 },
+    "acceptsReservations": "https://www.thefork.be/restaurant/comal-bruxelles-000000",
+    "sameAs": [
+      "https://instagram.com/comal.bxl",
+      "https://facebook.com/comal.bxl"
+    ],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday"], "opens": "12:00", "closes": "14:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday"], "opens": "18:00", "closes": "22:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday"], "opens": "12:00", "closes": "14:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday"], "opens": "18:00", "closes": "23:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "18:00", "closes": "23:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday"], "opens": "12:00", "closes": "16:00" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav" id="nav">
+    <a href="/" class="nav-logo">COMAL<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#histoire">Histoire</a></li>
+      <li><a href="#galerie">Galerie</a></li>
+      <li><a href="#menu">Carte</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <ul class="lang-switcher">
+        <li><a href="/" class="active">FR</a></li>
+        <li><a href="en.html">EN</a></li>
+        <li><a href="nl.html">NL</a></li>
+      </ul>
+      <a href="https://www.thefork.be/restaurant/comal-bruxelles-000000" target="_blank" rel="noopener" class="nav-cta">Réserver</a>
+    </div>
+    <button class="nav-burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-mobile">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Menu mobile -->
+  <div class="nav-mobile" id="nav-mobile" hidden>
+    <ul>
+      <li><a href="#histoire">Histoire</a></li>
+      <li><a href="#galerie">Galerie</a></li>
+      <li><a href="#menu">Carte</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://www.thefork.be/restaurant/comal-bruxelles-000000" target="_blank" rel="noopener">Réserver une table</a></li>
+    </ul>
+    <div class="lang-switcher-mobile">
+      <a href="/" class="active">FR</a>
+      <a href="en.html">EN</a>
+      <a href="nl.html">NL</a>
+    </div>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <header class="hero">
+    <div class="hero__text">
+      <p class="hero__eyebrow">Taqueria · Flagey, Ixelles</p>
+      <h1 class="hero__title">
+        <span class="accent">CO</span><span class="stroke">MAL</span>
+      </h1>
+      <p class="hero__slogan">Le Mexique de rue, à Flagey. Tortillas de masa pressée chaque matin, tacos taillés sur broche, mezcal au comptoir.</p>
+      <div class="hero__actions">
+        <a href="https://www.thefork.be/restaurant/comal-bruxelles-000000" target="_blank" rel="noopener" class="btn-primary">Réserver une table</a>
+        <a href="#menu" class="btn-secondary">Voir la carte</a>
+      </div>
+    </div>
+    <div class="hero__image">
+      <img src="assets/photos/hero.jpg" alt="Tacos mexicains et citron vert sur le comptoir de Comal" fetchpriority="high">
+    </div>
+    <div class="hero__badge">
+      <a href="https://www.thefork.be/restaurant/comal-bruxelles-000000" target="_blank" rel="noopener" class="sticker-cta" aria-label="Réserver">
+        <svg viewBox="0 0 100 100" aria-hidden="true">
+          <defs><path id="circlePath" d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"/></defs>
+          <text fill="#0f0f0f" font-family="Anton, sans-serif" font-size="11" letter-spacing="2.5">
+            <textPath href="#circlePath" startOffset="0%">· RESERVER · DESDE 2021 · COMAL BXL </textPath>
+          </text>
+        </svg>
+        <span class="sticker-core">¡VAMOS!</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ===================== MARQUEE (détail signature) ===================== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>MASA NIXTAMALISÉE MAISON</span><span class="star">✦</span>
+      <span>AL PASTOR SUR BROCHE</span><span class="star">✦</span>
+      <span>COCHINITA PIBIL 12H</span><span class="star">✦</span>
+      <span>MEZCAL ARTISANAL</span><span class="star">✦</span>
+      <span>PRODUITS BELGES</span><span class="star">✦</span>
+      <span>SALSAS À LA MINUTE</span><span class="star">✦</span>
+    </div>
+  </div>
+
+  <!-- ===================== HISTOIRE ===================== -->
+  <section class="about" id="histoire">
+    <div class="container about__grid">
+      <div class="about__text">
+        <p class="kicker">Notre histoire</p>
+        <h2 class="section-title reveal-words">Du <em>comal</em> de Mexico à Flagey</h2>
+        <div class="about__body" data-aos="fade-up">
+          <p>Comal est né du retour à Bruxelles de Diego et Margaux, deux associés qui se sont rencontrés dans une cantine de quartier de Mexico. Lui y avait grandi entre le comal de sa grand-mère — la plaque de fonte sur laquelle on cuit les tortillas — et les marchés de la Roma ; elle y était partie apprendre la cuisine et n'en est jamais vraiment revenue indemne. De ces années communes leur reste une obsession : faire à Bruxelles les tacos qu'on mange debout, le soir, dans les rues de Mexico.</p>
+          <p>Chez Comal, tout part de la masa. Le maïs est nixtamalisé puis pressé chaque matin sur place : pas de tortilla industrielle, pas de raccourci. Le reste suit la même logique — cochinita pibil mariné douze heures, al pastor taillé sur la broche, salsas montées à la minute. Les produits, eux, sont belges autant que possible : maraîchers du Brabant, porc de plein air, herbes d'un petit producteur de Jette.</p>
+          <p>La salle ressemble à ce qu'on aime : béton brut, néons chauds, tables coude à coude et une mezcalería où l'on prend le temps. On vient pour les tacos, on reste pour le mezcal — c'est à peu près tout le programme.</p>
+        </div>
+      </div>
+      <div class="about__image" data-aos="fade-left">
+        <img src="assets/photos/interieur-comal.jpg" alt="Cuisson des tortillas de masa fraîche sur le comal" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EN CHIFFRES ===================== -->
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stat" data-aos="fade-up">
+        <div class="stat__num"><span class="counter" data-target="2021" data-suffix="">0</span></div>
+        <div class="stat__label">Ouvert depuis</div>
+      </div>
+      <div class="stat" data-aos="fade-up" data-aos-delay="80">
+        <div class="stat__num"><span class="counter" data-target="100" data-suffix="%">0</span></div>
+        <div class="stat__label">Masa pressée maison</div>
+      </div>
+      <div class="stat" data-aos="fade-up" data-aos-delay="160">
+        <div class="stat__num"><span class="counter" data-target="12" data-suffix="h">0</span></div>
+        <div class="stat__label">Cochinita marinée</div>
+      </div>
+      <div class="stat" data-aos="fade-up" data-aos-delay="240">
+        <div class="stat__num"><span class="counter" data-target="6" data-suffix="">0</span></div>
+        <div class="stat__label">Mezcals à la carte</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALERIE ===================== -->
+  <section class="galerie-section" id="galerie">
+    <div class="container">
+      <div class="galerie-head">
+        <div>
+          <p class="kicker">En images</p>
+          <h2 class="section-title reveal-words">La maison</h2>
+        </div>
+        <div class="galerie-filtres" id="galerie-filtres">
+          <button class="actif" data-cat="all">Tout</button>
+          <button data-cat="plats">Plats</button>
+          <button data-cat="interieur">Salle</button>
+          <button data-cat="equipe">Équipe</button>
+          <button data-cat="evenements">Événements</button>
+        </div>
+      </div>
+
+      <div class="galerie" id="galerie-grid" data-filter="all">
+        <picture data-cat="plats" data-caption="Tacos al pastor, ananas grillé">
+          <img src="assets/photos/plat-tacos-pastor.jpg" alt="Tacos al pastor avec ananas grillé" loading="lazy"></picture>
+        <picture data-cat="plats" data-caption="Ceviche de dorade, leche de tigre">
+          <img src="assets/photos/plat-ceviche.jpg" alt="Ceviche de dorade sur tostada" loading="lazy"></picture>
+        <picture data-cat="interieur" data-caption="Béton brut & néons chauds">
+          <img src="assets/photos/interieur-salle.jpg" alt="Salle béton et néons chauds" loading="lazy"></picture>
+        <picture data-cat="plats" data-caption="Guacamole & totopos maison">
+          <img src="assets/photos/plat-guacamole.jpg" alt="Guacamole et chips de maïs maison" loading="lazy"></picture>
+        <picture data-cat="interieur" data-caption="Le comptoir de la mezcalería">
+          <img src="assets/photos/interieur-bar.jpg" alt="Comptoir de la mezcalería" loading="lazy"></picture>
+        <picture data-cat="equipe" data-caption="Aux fourneaux">
+          <img src="assets/photos/equipe-cuisine.jpg" alt="L'équipe en cuisine" loading="lazy"></picture>
+
+        <picture class="galerie-extra" data-cat="plats" data-caption="Elote, crema & cotija">
+          <img src="assets/photos/plat-elote.jpg" alt="Épi de maïs grillé elote" loading="lazy"></picture>
+        <picture class="galerie-extra" data-cat="plats" data-caption="Churros, chocolat noir">
+          <img src="assets/photos/plat-churros.jpg" alt="Churros sauce chocolat" loading="lazy"></picture>
+        <picture class="galerie-extra" data-cat="interieur" data-caption="Tortillas sur le comal">
+          <img src="assets/photos/interieur-comal.jpg" alt="Cuisson des tortillas sur le comal" loading="lazy"></picture>
+        <picture class="galerie-extra" data-cat="equipe" data-caption="L'équipe Comal">
+          <img src="assets/photos/equipe-fondateurs.jpg" alt="L'équipe de Comal aux fourneaux" loading="lazy"></picture>
+        <picture class="galerie-extra" data-cat="evenements" data-caption="Soirée dégustation mezcal">
+          <img src="assets/photos/event-mezcal.jpg" alt="Soirée dégustation mezcal" loading="lazy"></picture>
+        <picture class="galerie-extra" data-cat="evenements" data-caption="Soirée Día de los Muertos">
+          <img src="assets/photos/event-dia.jpg" alt="Soirée Día de los Muertos" loading="lazy"></picture>
+      </div>
+
+      <div class="galerie-more-wrap">
+        <button class="galerie-more" id="galerie-more">Voir plus de photos</button>
+      </div>
+      <div class="galerie-less-wrap">
+        <button class="galerie-less" id="galerie-less">Voir moins</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MENU ===================== -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <p class="kicker">La carte</p>
+      <h2 class="section-title reveal-words" style="margin-bottom:2.6rem;">À <em>partager</em>, debout</h2>
+
+      <div class="menu-section">
+        <h3>Para picar</h3>
+        <div class="menu-grid">
+          <div class="menu-card" data-aos="fade-up">
+            <header><h4>Guacamole &amp; totopos</h4><span class="prix">9,50 €</span></header>
+            <p>Avocat écrasé minute, oignon rouge, coriandre, chips de maïs maison</p>
+          </div>
+          <div class="menu-card" data-aos="fade-up" data-aos-delay="60">
+            <header><h4>Elote</h4><span class="prix">7,00 €</span></header>
+            <p>Épi de maïs grillé, crema, cotija, piment chipotle, citron vert</p>
+          </div>
+          <div class="menu-card" data-aos="fade-up">
+            <header><h4>Ceviche de dorade</h4><span class="prix">13,50 €</span></header>
+            <p>Leche de tigre, oignon rouge, avocat, coriandre, tostada</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <h3>Tacos</h3>
+        <div class="menu-grid">
+          <div class="menu-card" data-aos="fade-up">
+            <header><h4>Al pastor <span class="badge badge--pick">Signature</span></h4><span class="prix">5,50 €</span></header>
+            <p>Porc mariné à l'achiote taillé sur broche, ananas grillé, coriandre</p>
+          </div>
+          <div class="menu-card" data-aos="fade-up" data-aos-delay="60">
+            <header><h4>Cochinita pibil</h4><span class="prix">5,50 €</span></header>
+            <p>Porc effiloché mariné 12h, oignon rouge mariné, habanero</p>
+          </div>
+          <div class="menu-card" data-aos="fade-up">
+            <header><h4>Carnitas</h4><span class="prix">5,50 €</span></header>
+            <p>Porc confit croustillant, salsa verde, oignon, coriandre</p>
+          </div>
+          <div class="menu-card" data-aos="fade-up" data-aos-delay="60">
+            <header><h4>Baja fish</h4><span class="prix">6,00 €</span></header>
+            <p>Cabillaud pané croustillant, chou rouge, crema chipotle, citron vert</p>
+          </div>
+          <div class="menu-card" data-aos="fade-up">
+            <header><h4>Hongos <span class="badge badge--vege">Végé</span></h4><span class="prix">5,00 €</span></header>
+            <p>Champignons rôtis, maïs grillé, salsa macha</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <h3>Tostadas &amp; más</h3>
+        <div class="menu-grid">
+          <div class="menu-card" data-aos="fade-up">
+            <header><h4>Tostada de tinga</h4><span class="prix">8,50 €</span></header>
+            <p>Poulet effiloché au chipotle, haricots noirs, crema, cotija</p>
+          </div>
+          <div class="menu-card" data-aos="fade-up" data-aos-delay="60">
+            <header><h4>Quesadilla de chorizo</h4><span class="prix">9,00 €</span></header>
+            <p>Tortilla pliée, chorizo maison, fromage fondu, salsa roja</p>
+          </div>
+          <div class="menu-card" data-aos="fade-up">
+            <header><h4>Esquites</h4><span class="prix">6,50 €</span></header>
+            <p>Maïs égrené sauté, mayo épicée, cotija, citron vert — en bol</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <h3>Postres</h3>
+        <div class="menu-grid">
+          <div class="menu-card" data-aos="fade-up">
+            <header><h4>Churros</h4><span class="prix">7,00 €</span></header>
+            <p>Sucre cannelle, sauce chocolat noir et dulce de leche</p>
+          </div>
+          <div class="menu-card" data-aos="fade-up" data-aos-delay="60">
+            <header><h4>Flan de cajeta</h4><span class="prix">6,50 €</span></header>
+            <p>Flan au caramel de lait de chèvre</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <h3>Mezcalería</h3>
+        <div class="menu-grid">
+          <div class="menu-card" data-aos="fade-up">
+            <header><h4>Margarita Comal <span class="badge badge--pick">Maison</span></h4><span class="prix">11,00 €</span></header>
+            <p>Tequila blanco, citron vert, agave, sel de Colima</p>
+          </div>
+          <div class="menu-card" data-aos="fade-up" data-aos-delay="60">
+            <header><h4>Paloma</h4><span class="prix">10,00 €</span></header>
+            <p>Tequila, pamplemousse, soda, citron vert</p>
+          </div>
+          <div class="menu-card" data-aos="fade-up">
+            <header><h4>Carta de mezcal</h4><span class="prix">9,00 €</span></header>
+            <p>Sélection de 6 mezcals artisanaux au verre (4 cl)</p>
+          </div>
+          <div class="menu-card" data-aos="fade-up" data-aos-delay="60">
+            <header><h4>Agua fresca du jour</h4><span class="prix">5,00 €</span></header>
+            <p>Boisson fraîche maison sans alcool (hibiscus, tamarin…)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RÉSERVATION ===================== -->
+  <section class="reservation">
+    <div class="container">
+      <p class="kicker" style="color:var(--color-accent-2);">Réserver</p>
+      <h2 class="section-title">Une table chez Comal</h2>
+      <p>On garde les tables coude à coude — réservez en deux clics via TheFork. Pour les groupes de plus de 8, écrivez-nous directement.</p>
+      <a href="https://www.thefork.be/restaurant/comal-bruxelles-000000" target="_blank" rel="noopener" class="btn-primary">Réserver sur TheFork</a>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact" id="contact">
+    <div class="container contact-grid">
+      <div>
+        <p class="kicker">Nous trouver</p>
+        <h2 class="section-title reveal-words" style="margin-bottom:1.6rem;">Flagey, Ixelles</h2>
+        <address class="contact-info">
+          <p><strong>Comal</strong><br>Rue Lesbroussart 88<br>1050 Ixelles, Bruxelles</p>
+          <p><a href="tel:+3226441890">+32 2 644 18 90</a><br>
+             <a href="mailto:hola@comal.be">hola@comal.be</a></p>
+
+          <h3>Horaires</h3>
+          <dl class="horaires">
+            <dt>Lundi</dt><dd class="ferme">Fermé</dd>
+            <dt>Mardi</dt><dd>12:00–14:30 · 18:00–22:30</dd>
+            <dt>Mercredi</dt><dd>12:00–14:30 · 18:00–22:30</dd>
+            <dt>Jeudi</dt><dd>12:00–14:30 · 18:00–22:30</dd>
+            <dt>Vendredi</dt><dd>12:00–14:30 · 18:00–23:30</dd>
+            <dt>Samedi</dt><dd>18:00–23:30</dd>
+            <dt>Dimanche</dt><dd>12:00–16:00</dd>
+          </dl>
+        </address>
+      </div>
+      <div class="contact-map">
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=4.3654%2C50.8236%2C4.3794%2C50.8316&layer=mapnik&marker=50.8276%2C4.3724"
+          title="Carte — Comal, Rue Lesbroussart 88, Ixelles"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">COMAL<span class="dot">.</span></div>
+          <p>Taqueria mexicaine de rue. Tortillas de masa fraîche, tacos sur broche et mezcal au comptoir, à Flagey.</p>
+        </div>
+        <div>
+          <h4>Visiter</h4>
+          <ul class="socials">
+            <li><a href="#histoire">Histoire</a></li>
+            <li><a href="#menu">La carte</a></li>
+            <li><a href="#galerie">Galerie</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Suivre</h4>
+          <ul class="socials">
+            <li><a href="https://instagram.com/comal.bxl" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://facebook.com/comal.bxl" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="https://www.thefork.be/restaurant/comal-bruxelles-000000" target="_blank" rel="noopener">TheFork</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © <span id="year">2026</span> Comal · Rue Lesbroussart 88, 1050 Ixelles ·
+        Site par <a href="#" style="color:var(--color-muted);">Atelier Épure</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js?v=3"></script>
+</body>
+</html>

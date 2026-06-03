@@ -1,0 +1,150 @@
+{
+  "tier": "signature",
+  "mood": "street-food",
+
+  "identite": {
+    "nom": "Comal",
+    "slug": "comal",
+    "logo": "assets/logo.svg",
+    "slogan": "Le Mexique de rue, à Flagey",
+    "type_cuisine": "mexicain de rue (taqueria)",
+    "annee_creation": 2021
+  },
+
+  "histoire": "Comal est né du retour à Bruxelles de Diego et Margaux, deux associés qui se sont rencontrés dans une cantine de quartier de Mexico. Lui y avait grandi entre le comal de sa grand-mère — la plaque de fonte sur laquelle on cuit les tortillas — et les marchés de la Roma ; elle y était partie apprendre la cuisine et n'en est jamais vraiment revenue indemne. De ces années communes leur reste une obsession : faire à Bruxelles les tacos qu'on mange debout, le soir, dans les rues de Mexico.\n\nChez Comal, tout part de la masa. Le maïs est nixtamalisé puis pressé chaque matin sur place : pas de tortilla industrielle, pas de raccourci. Le reste suit la même logique — cochinita pibil mariné douze heures, al pastor taillé sur la broche, salsas montées à la minute. Les produits, eux, sont belges autant que possible : maraîchers du Brabant, porc de plein air, herbes d'un petit producteur de Jette.\n\nLa salle ressemble à ce qu'on aime : béton brut, néons chauds, tables coude à coude et une mezcalería où l'on prend le temps. On vient pour les tacos, on reste pour le mezcal — c'est à peu près tout le programme.",
+
+  "contact": {
+    "adresse": {
+      "rue": "Rue Lesbroussart 88",
+      "code_postal": "1050",
+      "ville": "Ixelles",
+      "pays": "Belgique",
+      "lat": 50.8276,
+      "lng": 4.3724
+    },
+    "telephone": "+32 2 644 18 90",
+    "email": "hola@comal.be",
+    "reseaux": {
+      "instagram": "https://instagram.com/comal.bxl",
+      "facebook": "https://facebook.com/comal.bxl",
+      "google_maps": "https://maps.app.goo.gl/comal-flagey"
+    }
+  },
+
+  "horaires": {
+    "lundi": "fermé",
+    "mardi": "12:00-14:30, 18:00-22:30",
+    "mercredi": "12:00-14:30, 18:00-22:30",
+    "jeudi": "12:00-14:30, 18:00-22:30",
+    "vendredi": "12:00-14:30, 18:00-23:30",
+    "samedi": "18:00-23:30",
+    "dimanche": "12:00-16:00"
+  },
+
+  "menu": {
+    "afficher_prix": true,
+    "sections": [
+      {
+        "nom": "Para picar",
+        "items": [
+          { "nom": "Guacamole & totopos", "description": "Avocat écrasé minute, oignon rouge, coriandre, chips de maïs maison", "prix": 9.50 },
+          { "nom": "Elote", "description": "Épi de maïs grillé, crema, cotija, piment chipotle, citron vert", "prix": 7.00 },
+          { "nom": "Ceviche de dorade", "description": "Leche de tigre, oignon rouge, avocat, coriandre, tostada", "prix": 13.50 }
+        ]
+      },
+      {
+        "nom": "Tacos",
+        "items": [
+          { "nom": "Al pastor", "description": "Porc mariné à l'achiote taillé sur broche, ananas grillé, coriandre", "prix": 5.50 },
+          { "nom": "Cochinita pibil", "description": "Porc effiloché mariné 12h, oignon rouge mariné, habanero", "prix": 5.50 },
+          { "nom": "Carnitas", "description": "Porc confit croustillant, salsa verde, oignon, coriandre", "prix": 5.50 },
+          { "nom": "Baja fish", "description": "Cabillaud pané croustillant, chou rouge, crema chipotle, citron vert", "prix": 6.00 },
+          { "nom": "Hongos", "description": "Champignons rôtis, maïs grillé, salsa macha — végétarien", "prix": 5.00 }
+        ]
+      },
+      {
+        "nom": "Tostadas & más",
+        "items": [
+          { "nom": "Tostada de tinga", "description": "Poulet effiloché au chipotle, haricots noirs, crema, cotija", "prix": 8.50 },
+          { "nom": "Quesadilla de chorizo", "description": "Tortilla pliée, chorizo maison, fromage fondu, salsa roja", "prix": 9.00 },
+          { "nom": "Esquites", "description": "Maïs égrené sauté, mayo épicée, cotija, citron vert — en bol", "prix": 6.50 }
+        ]
+      },
+      {
+        "nom": "Postres",
+        "items": [
+          { "nom": "Churros", "description": "Sucre cannelle, sauce chocolat noir et dulce de leche", "prix": 7.00 },
+          { "nom": "Flan de cajeta", "description": "Flan au caramel de lait de chèvre", "prix": 6.50 }
+        ]
+      },
+      {
+        "nom": "Mezcalería",
+        "items": [
+          { "nom": "Margarita Comal", "description": "Tequila blanco, citron vert, agave, sel de Colima", "prix": 11.00 },
+          { "nom": "Paloma", "description": "Tequila, pamplemousse, soda, citron vert", "prix": 10.00 },
+          { "nom": "Carta de mezcal", "description": "Sélection de 6 mezcals artisanaux au verre (4 cl)", "prix": 9.00 },
+          { "nom": "Agua fresca du jour", "description": "Boisson fraîche maison sans alcool (hibiscus, tamarin…)", "prix": 5.00 }
+        ]
+      }
+    ]
+  },
+
+  "photos": {
+    "hero": "assets/photos/hero.jpg",
+    "_note_photos": "PLACEHOLDERS — à remplacer par sélection Unsplash/Pexels au moment de la génération (taqueria, tacos, mezcal, béton/néon). Aucune photo réelle fournie (resto fictif de démo).",
+    "galerie": [
+      { "src": "assets/photos/plat-tacos-pastor.jpg", "categorie": "plats", "alt": "Tacos al pastor avec ananas grillé" },
+      { "src": "assets/photos/plat-ceviche.jpg", "categorie": "plats", "alt": "Ceviche de dorade sur tostada" },
+      { "src": "assets/photos/plat-guacamole.jpg", "categorie": "plats", "alt": "Guacamole et chips de maïs maison" },
+      { "src": "assets/photos/plat-elote.jpg", "categorie": "plats", "alt": "Épi de maïs grillé elote" },
+      { "src": "assets/photos/plat-churros.jpg", "categorie": "plats", "alt": "Churros sauce chocolat" },
+      { "src": "assets/photos/interieur-salle.jpg", "categorie": "interieur", "alt": "Salle béton et néons chauds" },
+      { "src": "assets/photos/interieur-bar.jpg", "categorie": "interieur", "alt": "Comptoir de la mezcalería" },
+      { "src": "assets/photos/interieur-comal.jpg", "categorie": "interieur", "alt": "Cuisson des tortillas sur le comal" },
+      { "src": "assets/photos/equipe-cuisine.jpg", "categorie": "equipe", "alt": "L'équipe en cuisine" },
+      { "src": "assets/photos/equipe-fondateurs.jpg", "categorie": "equipe", "alt": "Diego et Margaux, fondateurs" },
+      { "src": "assets/photos/event-mezcal.jpg", "categorie": "evenements", "alt": "Soirée dégustation mezcal" },
+      { "src": "assets/photos/event-dia.jpg", "categorie": "evenements", "alt": "Soirée Día de los Muertos" }
+    ]
+  },
+
+  "modules": {
+    "carte_interactive": true,
+    "reservation": {
+      "type": "thefork",
+      "lien": "https://www.thefork.be/restaurant/comal-bruxelles-000000",
+      "couverts_max": 45
+    },
+    "multilingue": {
+      "langues": ["fr", "en", "nl"],
+      "langue_principale": "fr"
+    },
+    "galerie_etendue": true,
+    "menu_interactif": false,
+    "blog": { "actif": false }
+  },
+
+  "seo": {
+    "meta_description": "Comal — taqueria mexicaine à Flagey, Ixelles. Tortillas de masa fraîche, tacos al pastor, mezcal. Réservation en ligne, ouvert du mardi au dimanche.",
+    "mots_cles": [
+      "taqueria Bruxelles",
+      "tacos Ixelles",
+      "restaurant mexicain Flagey",
+      "mezcal Bruxelles"
+    ],
+    "zone_geo": "Flagey, Ixelles (Bruxelles)"
+  },
+
+  "traductions": {
+    "en": {
+      "slogan": "Mexican street food, in the heart of Brussels",
+      "histoire": "Comal was born when Diego and Margaux came back to Brussels — two partners who first met in a neighbourhood diner in Mexico City. He had grown up there, between his grandmother's comal (the cast-iron griddle where tortillas are cooked) and the markets of Roma; she had gone to learn how to cook and never quite came back the same. From those shared years they kept a single obsession: making, in Brussels, the tacos you eat standing up, at night, in the streets of Mexico City.\n\nAt Comal, everything starts with the masa. The corn is nixtamalised then pressed fresh on site every morning: no industrial tortilla, no shortcut. The rest follows the same logic — cochinita pibil marinated for twelve hours, al pastor carved off the spit, salsas made to order. The produce is as Belgian as it can be: market gardeners from Brabant, free-range pork, herbs from a small grower in Jette.\n\nThe dining room looks the way we like it: raw concrete, warm neon, tables elbow to elbow, and a mezcalería where you take your time. You come for the tacos, you stay for the mezcal — that's pretty much the whole plan.",
+      "horaires_jours": { "lundi": "Monday", "mardi": "Tuesday", "mercredi": "Wednesday", "jeudi": "Thursday", "vendredi": "Friday", "samedi": "Saturday", "dimanche": "Sunday" }
+    },
+    "nl": {
+      "slogan": "Mexicaanse straatkeuken, in het hart van Brussel",
+      "histoire": "Comal ontstond toen Diego en Margaux terugkeerden naar Brussel — twee partners die elkaar hadden leren kennen in een buurtcantine in Mexico-Stad. Hij was er opgegroeid, tussen de comal van zijn grootmoeder — de gietijzeren plaat waarop tortilla's worden gebakken — en de markten van Roma; zij was er naartoe getrokken om te leren koken en is nooit helemaal dezelfde teruggekomen. Uit die gedeelde jaren bleef één obsessie over: in Brussel de taco's maken die je 's avonds rechtstaand eet, in de straten van Mexico-Stad.\n\nBij Comal begint alles met de masa. De maïs wordt genixtamaliseerd en elke ochtend ter plaatse vers geperst: geen industriële tortilla, geen shortcut. De rest volgt dezelfde logica — cochinita pibil twaalf uur gemarineerd, al pastor van het spit gesneden, salsa's à la minute bereid. De producten zijn zo Belgisch mogelijk: tuinders uit Brabant, scharrelvarken, kruiden van een kleine teler in Jette.\n\nDe zaal ziet eruit zoals we het graag hebben: ruw beton, warme neon, tafels dicht op elkaar en een mezcalería waar je de tijd neemt. Je komt voor de taco's, je blijft voor de mezcal — dat is zo'n beetje het hele plan.",
+      "horaires_jours": { "lundi": "Maandag", "mardi": "Dinsdag", "mercredi": "Woensdag", "jeudi": "Donderdag", "vendredi": "Vrijdag", "samedi": "Zaterdag", "dimanche": "Zondag" }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://comal.be/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://comal.be/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://comal.be/en.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://comal.be/nl.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://comal.be/"/>
+  </url>
+  <url>
+    <loc>https://comal.be/en.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://comal.be/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://comal.be/en.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://comal.be/nl.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://comal.be/"/>
+  </url>
+  <url>
+    <loc>https://comal.be/nl.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://comal.be/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://comal.be/en.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://comal.be/nl.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://comal.be/"/>
+  </url>
+</urlset>

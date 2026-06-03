@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <!-- comal disc mark -->
+  <circle cx="40" cy="40" r="26" fill="none" stroke="#ff4d00" stroke-width="5"/>
+  <circle cx="40" cy="40" r="15" fill="#ffd60a"/>
+  <circle cx="35" cy="37" r="1.8" fill="#0f0f0f"/>
+  <circle cx="44" cy="42" r="1.8" fill="#0f0f0f"/>
+  <circle cx="41" cy="34" r="1.4" fill="#0f0f0f"/>
+  <!-- wordmark -->
+  <text x="82" y="54" font-family="'Anton','Archivo Black',Impact,sans-serif"
+        font-size="46" letter-spacing="2" fill="#f5f5f0">COMAL</text>
+  <circle cx="300" cy="50" r="5" fill="#ff4d00"/>
+</svg>
