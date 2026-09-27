@@ -507,6 +507,23 @@ section { padding-block: var(--section-padding); position: relative; }
 .horaires .ferme { color: var(--color-accent); }
 .contact-map { min-height: 380px; border: 1px solid var(--color-line); }
 .contact-map iframe { width: 100%; height: 100%; min-height: 380px; filter: grayscale(0.3) invert(0.92) hue-rotate(180deg) contrast(0.9); }
+/* Carte en « clic pour charger » (RGPD) — même gabarit que l'iframe qu'elle remplace */
+.map-consent {
+  height: 100%; min-height: 380px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 1.25rem; padding: 2rem; text-align: center;
+  background: var(--color-card);
+}
+.map-consent__adresse { font-family: var(--font-display); font-size: 1.6rem; text-transform: uppercase; letter-spacing: 0.02em; }
+.map-consent__btn {
+  font: inherit; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+  padding: 1rem 2.2rem; cursor: pointer;
+  background: var(--color-accent); color: var(--color-bg); border: 2px solid var(--color-accent);
+  transition: background 0.2s, color 0.2s;
+}
+.map-consent__btn:hover, .map-consent__btn:focus-visible { background: transparent; color: var(--color-accent); }
+.map-consent__note { font-size: 0.78rem; color: var(--color-muted); max-width: 36ch; }
+.map-consent__note a { color: inherit; text-decoration: underline; }
 
 /* ===================== FOOTER ===================== */
 .footer { background: #0a0a0a; border-top: 1px solid var(--color-line); padding-block: 3.5rem 1.5rem; }

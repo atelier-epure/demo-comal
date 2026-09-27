@@ -33,7 +33,7 @@
   <!-- AOS (CDN versionné figé) -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
 
   <!-- Schema.org Restaurant -->
   <script type="application/ld+json">
@@ -387,10 +387,12 @@
         </address>
       </div>
       <div class="contact-map">
-        <iframe
-          src="https://www.openstreetmap.org/export/embed.html?bbox=4.3654%2C50.8236%2C4.3794%2C50.8316&layer=mapnik&marker=50.8276%2C4.3724"
-          title="Kaart — Comal, Rue Lesbroussart 88, Elsene"
-          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- Carte en « clic pour charger » : aucun appel à OpenStreetMap avant le clic (RGPD) — voir script.js -->
+        <div class="map-consent" data-map-src="https://www.openstreetmap.org/export/embed.html?bbox=4.3654%2C50.8236%2C4.3794%2C50.8316&amp;layer=mapnik&amp;marker=50.8276%2C4.3724" data-map-title="Kaart — Comal, Rue Lesbroussart 88, Elsene">
+          <p class="map-consent__adresse">Rue Lesbroussart 88 · 1050 Elsene</p>
+          <button type="button" class="map-consent__btn">Kaart tonen</button>
+          <p class="map-consent__note">Door de kaart te tonen, wordt ze geladen via OpenStreetMap, waarvan de servers je IP-adres ontvangen. <a href="mentions-legales.html">Meer info</a></p>
+        </div>
       </div>
     </div>
   </section>
@@ -431,7 +433,7 @@
   <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="script.js?v=3"></script>
+  <script src="script.js?v=4"></script>
 
 <!-- Bandeau demonstration — Atelier Epure -->
 <style>

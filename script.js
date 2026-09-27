@@ -189,3 +189,16 @@
   });
 
 })();
+
+/* ─── CARTE « CLIC POUR CHARGER » (RGPD) ───────────── */
+// L'iframe OpenStreetMap n'est injectée qu'après un clic explicite :
+// aucun appel aux serveurs OSM tant que le visiteur n'a rien demandé.
+document.querySelectorAll('.map-consent').forEach(box => {
+  box.querySelector('.map-consent__btn').addEventListener('click', () => {
+    const iframe = document.createElement('iframe');
+    iframe.src = box.dataset.mapSrc;
+    iframe.title = box.dataset.mapTitle;
+    iframe.referrerPolicy = 'no-referrer-when-downgrade';
+    box.replaceWith(iframe);
+  });
+});
