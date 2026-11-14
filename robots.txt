@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://comal.be/sitemap.xml
